@@ -1,7 +1,7 @@
 <?php
 
-	echo "Hello World!";
-	echo "Тест версии";
+	echo "Hello World!";<br>
+	echo "Тест версии";<br>
 
 	$name = "Michael";
 ?>
