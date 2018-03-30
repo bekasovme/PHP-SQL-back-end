@@ -1,3 +1,11 @@
+<?php
+  $name = "Михаил";
+  $age = "32";
+  $mail = "bekasovme@gmail.com";
+  $city = "Москва";
+  $about = "системный администратор";
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -20,27 +28,20 @@
 	    padding: 5px 10px;
 	  }
   </style>
-  <?php
-	  $name = "Михаил";
-	  $age = "32";
-	  $mail = "bekasovme@gmail.com";
-	  $city = "Москва";
-	  $about = "системный администратор";
-	?>
 </head>
 <body>
 	<h1>Станица пользователя Михаил</h1>
 	<dl>
 		<dt>Имя</dt>
-		<dd><?php echo $name ?></dd>
+		<dd><?= $name ?></dd>
 	</dl>
 	<dl>
 		<dt>Возраст</dt>
-		<dd><?php echo $age ?></dd>
+		<dd><?= $age ?></dd>
 	</dl>
 	<dl>
 		<dt>Адрес электронной почты</dt>
-		<dd><a href="mailto:"><?php echo $mail ?></a></dd>
+		<dd><a href="mailto:"><?= $mail ?></a></dd>
 	</dl>
 	<dl>
 		<dt>Город</dt>
