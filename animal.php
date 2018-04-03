@@ -4,23 +4,18 @@ $continents = array(
 	'africa' => array(
 		'macaca sylvanus',
 		'panthera pardus',
-		'felis margarita',
-		'gazella dorcas',
-		'hippopotamus',
-		'theropithecus gelada',
-		'psittacus erithacus',
-		'trioceros jacksonii',
-		'pan paniscus',
-		'colobus',
-		'hippotigris',
-		'tragelaphus imberbis',
-		'giraffa'
+		'felis margarita'
 	)
-	// 'eurasia' =>
-	// 'north America' =>
-	// 'south America' =>
-	// 'australia' =>
-	// 'antarctica' =>
+	'eurasia' => array(
+	)
+	'north America' => array(
+	)
+	'south America' => array(
+	)
+	'australia' => array(
+	)
+	'antarctica' => array(
+	)
 
 );
 
