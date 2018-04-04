@@ -6,35 +6,40 @@ $continents = array(
 		'panthera pardus',
 		'felis margarita'
 	)
+
 	'eurasia' => array(
 		'capra',
 		'meleseles meles',
 		'tarsius'
 
 	)
+
 	'north America' => array(
-		'Rangifer tarandus',
-		'Lynx rufus',
-		'Canis latrans'
+		'rangifer tarandus',
+		'lynx rufus',
+		'canis latrans'
 	)
+
 	'south America' => array(
-		'Vicugna vicugna',
-		'Hydrochoerus hydrochaeris',
-		'Panthera onca'
+		'vicugna vicugna',
+		'hydrochoerus hydrochaeris',
+		'panthera onca'
 	)
+
 	'australia' => array(
-		'Canis lupus dingo',
-		'Macropodidae',
-		'Raphus cucullatus'
+		'canis lupus dingo',
+		'macropodidae',
+		'raphus cucullatus'
 	)
+	
 	'antarctica' => array(
-		'Ursus maritimus',
-		'Aptenodytes patagonicus',
-		'Nyctea scandiaca'
+		'ursus maritimus',
+		'aptenodytes patagonicus',
+		'nyctea scandiaca'
 	)
 
 );
 
-echo $continents['africa'][6];
+echo $continents['australia'][2];
 
 ?>
