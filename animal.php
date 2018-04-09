@@ -12,7 +12,6 @@ $countinents = array(
 
 $new_array = [];
 foreach ($countinents as $country => $animals) {
-	// foreach ($animals as $key => $animal) {
 	foreach ($animals as $animal) {
 		if (strpos($animal, ' ') !== false) {
 			$new_array[] = $animal;
