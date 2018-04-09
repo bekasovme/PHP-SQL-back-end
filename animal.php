@@ -9,20 +9,22 @@ $countinents = array(
 	'antarctica' => array('ursus maritimus', 'aptenodytes patagonicus', 'nyctea scandiaca')
 );
 
-$result = [];
-foreach ($countinents as $animals)
-{
-	$result = array_merge($result, array_filter($animals, function ($item){ return count(explode(' ', $item)) === 2; }) );
+
+$new_array = [];
+foreach ($countinents as $country => $animals) {
+	// foreach ($animals as $key => $animal) {
+	foreach ($animals as $animal) {
+		if (strpos($animal, ' ') !== false) {
+			$new_array[] = $animal;
+		}
+	}
 }
 
-
 $animal1 = $animal2 = [];
-    
-    foreach($result as $value)
-        list($animal1[], $animal2[]) = explode(' ', $value);
-    
-    shuffle($animal1);
-    
-    foreach($animal1 as $key=>$animal)
-    		// echo '<pre>';
-        echo "{$animal} {$animal2[$key]}" . PHP_EOL, '<br>';
+  foreach($new_array as $value)
+    list($animal1[], $animal2[]) = explode(' ', $value);
+   
+  shuffle($animal1);
+
+  foreach($animal1 as $key=>$animal)
+		echo "{$animal} {$animal2[$key]}" . PHP_EOL, '<br>';
