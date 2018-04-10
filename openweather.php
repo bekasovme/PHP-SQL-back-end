@@ -3,11 +3,11 @@
 $url = "http://api.openweathermap.org/data/2.5/weather?id=524901&lang=ru&units=metric&APPID=c28dae2272e35cc5380368e2821abd4d";
 
 
-// $contents = file_get_contents($url);
-// $clima = json_decode($contents, true);
+$contents = file_get_contents($url);
+$clima = json_decode($contents, true);
 
-echo '<pre>';
-var_dump(json_decode($contents));
+// echo '<pre>';
+// var_dump(json_decode($contents));
 
 $icon = $clima["weather"][0]["icon"].".png";
 $today = date("D M j G:i:s Y");
